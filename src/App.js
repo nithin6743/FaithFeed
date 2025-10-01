@@ -1,22 +1,39 @@
 export default function App() {
-  return <div>
-    <Header />
-  </div>
+  return (
+    <div>
+      <Header />
+      <Main />
+    </div>
+  );
 }
 
-function Header(){
-  return <div className="header"
-      style={{
-        backgroundImage: `url(${process.env.PUBLIC_URL}/Background.jpg)`,
-        backgroundSize: "cover", // fills the screen
-        backgroundPosition: "center", // centers the image
-        backgroundRepeat: "no-repeat", // no tiling
-        height: "100vh", // full viewport height
-        width: "100vw", // full viewport width
-        overflow: "hidden", // avoids scrollbars
-      }}>
-        <button className="LogoName">FaithFeed</button>
-        <button className="Date">01/10/2025</button>
-        <button className="Login">Login</button>
+function Header() {
+  return (
+    <div className='header'>
+      <a className='LogoName' href='#'>
+        FaithFeed
+      </a>
+      <a className='Date'>01/10/2025</a>
+      <a className='Login' href='https://www.google.com/?zx=1759334362126&no_sw_cr=1'>
+        Login
+      </a>
+    </div>
+  );
+}
+
+function Main() {
+  return (
+    <div className='main'>
+      <div className='content'>
+        <h1 className='title'>Start Fresh in Faith</h1>
+        <p className='subtitle'>Explore truth, light, and meaning—one verse at a time.</p>
+        <form className='signupfields'>
+          <input className='signUpInput' type='text' placeholder='Name' />
+          <input className='signUpInput' type='text' placeholder='Email' />
+          <input className='signUpInput' type='text' placeholder='Password' />
+          <button className='OTPbutton' type='submit'>Get OTP</button>
+        </form>
       </div>
+    </div>
+  );
 }

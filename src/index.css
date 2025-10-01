@@ -8,6 +8,16 @@
 body {
   margin: 0;
   font-family: "MyFont", sans-serif;
+  background-image: url("D:\VS\faithfeed\public\Background.jpg"); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  height: 100vh; 
+  width: 100vw;
+  overflow: hidden; 
+  position: relative; 
+  z-index: -10; 
+  margin: 0;
 }
 
 code {
@@ -16,55 +26,139 @@ code {
 
 .LogoName {
   font-family: "MyFont", sans-serif;
-  font-size: 40px;
+  font-size: 35px;
   color: #ffffff;
 
-  background-color: rgba(255, 255, 255, 0.1); /* transparent white */
-  backdrop-filter: blur(10px); /* this blurs the background behind it */
-  -webkit-backdrop-filter: blur(35px); /* Safari support */
+  background-color: #0000001b;
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(35px); 
 
-  border: 1px solid rgba(255, 255, 255, 0.2); /* subtle border */
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 100px;
   padding: 15px 40px;
   margin: 20px 0 0 0;
+  text-decoration: none;
 }
 .Date {
   font-family: "MyFont", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   color: #ffffff;
 
-  background-color: rgba(255, 255, 255, 0.1); /* transparent white */
-  backdrop-filter: blur(10px); /* this blurs the background behind it */
-  -webkit-backdrop-filter: blur(35px); /* Safari support */
+  background-color: #0000001b;
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(35px); 
 
-  border: 1px solid rgba(255, 255, 255, 0.2); /* subtle border */
+  border: 1px solid rgba(255, 255, 255, 0.2); 
   border-radius: 100px;
-  padding: 28px 60px;
-  margin: 20px 0 0 0;
+  padding: 26px 60px;
+  margin: 17px 0 0 0;
 }
 
 .Login {
   font-family: "MyFont", sans-serif;
-  font-size: 40px;
+  font-size: 35px;
   color: #ffffff;
 
-  background-color: rgba(255, 255, 255, 0.1); /* transparent white */
-  backdrop-filter: blur(10px); /* this blurs the background behind it */
-  -webkit-backdrop-filter: blur(35px); /* Safari support */
+  background-color: #0000001b;
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(35px); 
 
-  border: 1px solid rgba(255, 255, 255, 0.2); /* subtle border */
+  border: 1px solid rgba(255, 255, 255, 0.2); 
   border-radius: 100px;
   padding: 15px 75px;
   margin: 20px 0 0 0;
+  text-decoration: none;
 }
 
 .header {
-  display: flex;            
-  flex-direction: row;     
-  justify-content: space-evenly; 
-   align-items: flex-start;       
-  gap: 350px;                    
-  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 350px;
+  height: 1vh;
   width: 100%;
-  z-index: 2;
+}
+
+.main {
+  height: 570px;
+  width: 1350px;
+  margin: 1.5vh auto;
+  padding: 50px;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(to bottom, #00000020, #2c2c2c20);
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(35px);
+  border-radius: 2px;
+
+  clip-path: path(
+    "M 30 90 L 190 90 A 45,45 0,0,0 230 50 L 230 40 A 45,45 0,0,1 280 0 L 560 0 A 45,45 0,0,1 600 40 L 600 50 A 45,45 0,0,0 640 90 L 795 90 A 45,45 0,0,0 835 50 L 835 40 A 45,45 0,0,1 875 0 L 1160 0 A 45,45 0,0,1 1200 40 L 1200 50 A 45,45 0,0,0 1240 90 L 1400 90 A 45,45 0,0,1 1450 130 L 1450 620 A 45,45 0,0,1 1410 660 L 40 660 A 45,45 0,0,1 0 610 L 0 140 A 45,45 0,0,1 40 90 Z"
+  );
+}
+
+.title {
+  font-size: 70px;
+  font-weight: lighter;
+  margin: 50px 0 0 0;
+}
+
+.subtitle {
+  font-size: 34px;
+  font-weight: lighter;
+  margin: 0 0 0 0;
+}
+.signUpInput {
+  margin: 40px 0 0 0;
+  font-family: "MyFont", sans-serif;
+  font-size: 28px; /* Pick one size */
+  background: linear-gradient(to bottom, #00000020, #2c2c2c20);
+  color: #ffffff;
+
+  border: none; 
+  outline: none; 
+  
+  padding: 15px 40px;
+  border-radius: 100px;
+  text-align: center;
+  width: 500px; 
+  box-sizing: border-box; 
+}
+
+
+.signUpInput::placeholder {
+  font-family: "MyFont", sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 24px;
+  text-align: center;
+}
+
+
+.signUpInput:focus {
+  border: none; 
+  outline: none;
+  color: rgb(255, 255, 255);
+}
+
+.signupfields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.OTPbutton{
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: linear-gradient(to bottom, #00000020, #2c2c2c20);
+  font-family: "MyFont", sans-serif;
+  font-size: 32px;
+  color: #ffffff;
+  padding: 10px 50px;
+  margin: 20px 0 0 0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 100px;
+
 }
