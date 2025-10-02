@@ -3,17 +3,27 @@ export default function App() {
     <div>
       <Header />
       <Main />
+      
     </div>
   );
 }
 
 function Header() {
+  const today = new Date();
+  // console.log(today);
+  const formattedDate = today.toLocaleDateString("en-IN", {
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric",
+  });
+  // console.log(formattedDate);
+  
   return (
     <div className='header'>
       <a className='LogoName' href='#'>
         FaithFeed
       </a>
-      <a className='Date'>01/10/2025</a>
+      <p className='Date'>{formattedDate}</p>
       <a className='Login' href='https://www.google.com/?zx=1759334362126&no_sw_cr=1'>
         Login
       </a>

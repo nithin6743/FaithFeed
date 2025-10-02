@@ -8,15 +8,15 @@
 body {
   margin: 0;
   font-family: "MyFont", sans-serif;
-  background-image: url("D:\VS\faithfeed\public\Background.jpg"); 
-  background-size: cover; 
-  background-position: center; 
+  background-image: url("D:\VS\faithfeed\public\Background.jpg");
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  height: 100vh; 
+  height: 100vh;
   width: 100vw;
-  overflow: hidden; 
-  position: relative; 
-  z-index: -10; 
+  overflow: hidden;
+  position: relative;
+  z-index: -10;
   margin: 0;
 }
 
@@ -30,8 +30,8 @@ code {
   color: #ffffff;
 
   background-color: #0000001b;
-  backdrop-filter: blur(10px); 
-  -webkit-backdrop-filter: blur(35px); 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(35px);
 
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 100px;
@@ -45,10 +45,10 @@ code {
   color: #ffffff;
 
   background-color: #0000001b;
-  backdrop-filter: blur(10px); 
-  -webkit-backdrop-filter: blur(35px); 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(35px);
 
-  border: 1px solid rgba(255, 255, 255, 0.2); 
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 100px;
   padding: 26px 60px;
   margin: 17px 0 0 0;
@@ -60,10 +60,10 @@ code {
   color: #ffffff;
 
   background-color: #0000001b;
-  backdrop-filter: blur(10px); 
-  -webkit-backdrop-filter: blur(35px); 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(35px);
 
-  border: 1px solid rgba(255, 255, 255, 0.2); 
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 100px;
   padding: 15px 75px;
   margin: 20px 0 0 0;
@@ -81,7 +81,7 @@ code {
 }
 
 .main {
-  height: 570px;
+  height: 500vh;
   width: 1350px;
   margin: 1.5vh auto;
   padding: 50px;
@@ -110,6 +110,7 @@ code {
   font-weight: lighter;
   margin: 0 0 0 0;
 }
+
 .signUpInput {
   margin: 40px 0 0 0;
   font-family: "MyFont", sans-serif;
@@ -117,16 +118,15 @@ code {
   background: linear-gradient(to bottom, #00000020, #2c2c2c20);
   color: #ffffff;
 
-  border: none; 
-  outline: none; 
-  
+  border: none;
+  outline: none;
+
   padding: 15px 40px;
   border-radius: 100px;
   text-align: center;
-  width: 500px; 
-  box-sizing: border-box; 
+  width: 500px;
+  box-sizing: border-box;
 }
-
 
 .signUpInput::placeholder {
   font-family: "MyFont", sans-serif;
@@ -135,9 +135,8 @@ code {
   text-align: center;
 }
 
-
 .signUpInput:focus {
-  border: none; 
+  border: none;
   outline: none;
   color: rgb(255, 255, 255);
 }
@@ -148,7 +147,7 @@ code {
   align-items: center;
 }
 
-.OTPbutton{
+.OTPbutton {
   cursor: pointer;
   outline: none;
   border: none;
@@ -160,5 +159,4 @@ code {
   margin: 20px 0 0 0;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 100px;
-
 }
