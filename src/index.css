@@ -27,6 +27,7 @@ code {
 .LogoName {
   font-family: "MyFont", sans-serif;
   font-size: 35px;
+  font-weight: lighter;
   color: #ffffff;
 
   background-color: #0000001b;
@@ -68,6 +69,24 @@ code {
   padding: 15px 75px;
   margin: 20px 0 0 0;
   text-decoration: none;
+  cursor: pointer;
+}
+
+.Signup {
+  font-family: "MyFont", sans-serif;
+  font-size: 35px;
+  color: #ffffff;
+
+  background-color: #0000001b;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(35px);
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 100px;
+  padding: 15px 66.5px;
+  margin: 20px 0 0 0;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .header {
@@ -147,7 +166,7 @@ code {
   align-items: center;
 }
 
-.OTPbutton {
+.enterPage {
   cursor: pointer;
   outline: none;
   border: none;
